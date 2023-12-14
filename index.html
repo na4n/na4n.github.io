@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="icon" href="resources/tenor.gif">
+		<link rel="icon" href="resources/static.png">
 
 		<title>a site</title>
-		<link rel="stylesheet" href="resources/style.css">
+
 		<script src="resources/main.js"></script>
+		<script>
+			let s = getCookie("fun");
+			if(s == "true"){
+				var link = document.querySelector("link[rel~='icon']");
+				link.href = 'resources/dynamic.gif';
+			}
+		</script>
 	
+		<link rel="stylesheet" href="resources/style.css">
 	</head>
 
 	<body>
 		<header>
 			<h1 class="title">Nathan Annareddy</h1>
+			<button onclick=partymode()>Toggle Party Mode</button>
 		</header>
 			
-<!--
-		<button onclick=test()>click</button>
--->
 		<h2 class="body-content"><a href="markdown.html">Markdown</a></h2>
 
 	</body>
