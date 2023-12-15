@@ -17,7 +17,7 @@ function getCookie(cname) {
 
 function setCookie(cname,cvalue,exdays) {
   const d = new Date();
-  d.setTime(d.getTime() + (10 * 365 * 24 * 60 * 60));
+  d.setTime(d.getTime() + (10 * 365 * 24 * 60 * 60) );
   let expires = "expires=" + d.toUTCString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
