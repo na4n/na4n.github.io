@@ -8,9 +8,12 @@
 		<script src="resources/main.js"></script>
 		<script>
 			let s = getCookie("fun");
+			var link = document.querySelector("link[rel~='icon']");
 			if(s == "true"){
-				var link = document.querySelector("link[rel~='icon']");
 				link.href = 'resources/dynamic.gif';
+			}
+			else{
+				link.href = 'resources/static.png';		
 			}
 		</script>
 	
@@ -27,4 +30,3 @@
 
 	</body>
 </html>
-
