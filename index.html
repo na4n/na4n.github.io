@@ -2,31 +2,25 @@
 <html>
 	<head>
 		<link rel="icon" href="resources/static.png">
-
-		<title>a site</title>
-
-		<script src="resources/main.js"></script>
-		<script>
-			let s = getCookie("fun");
-			var link = document.querySelector("link[rel~='icon']");
-			if(s == "true"){
-				link.href = 'resources/dynamic.gif';
-			}
-			else{
-				link.href = 'resources/static.png';		
-			}
-		</script>
-	
-		<link rel="stylesheet" href="resources/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nathan Annareddy</title>
 	</head>
 
 	<body>
 		<header>
-			<h1 class="title">Nathan Annareddy</h1>
-			<button onclick=partymode()>Toggle Party Mode</button>
+			<h1 class="title" style='text-align:center'>Nathan Annareddy</h1>
 		</header>
-			
-		<!-- <h2 class="body-content"><a href="markdown.html">Markdown</a></h2> -->
-
+		
+		<h2>Projects</h2>
+		<ul>
+			<li>Erugo [<a href='https://github.com/na4n/erugo/'>https://github.com/na4n/erugo/</a>]</li>
+			<li>DBMS [<a href='https://github.com/na4n/dbms/'>https://github.com/na4n/dbms</a>]</li>
+		</ul>
+		<h2>Other Pages</h2>
+		<ul>
+			<li><a href='pages/markdown.html'>Markdown Guide</a></li>
+			<li><a href='pages/errno.html'>C Error Codes</a></li>
+		</ul>
 	</body>
+
 </html>
