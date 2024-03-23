@@ -1,0 +1,31 @@
+a:link{
+	color: green;
+}
+
+*{
+    font-family: monospace;
+}
+
+p{
+	font-size: 1.25em;
+}
+code{
+	color: red;
+	font-style: italic;
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
