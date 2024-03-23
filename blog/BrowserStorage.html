@@ -9,7 +9,8 @@
     <body>
         
         <h1 style='text-align:center'>Browser Storage</h1>
-        
+		<h2 style='text-align:right'>2.8.24</h2>       
+ 
         <div id='content'>
             <p>There are four main options for a website's client side data storage: IndexedDB, Local Storage, Session Storage, Cookies.</p>
             <p>IndexedDB stores <a href="https://html.spec.whatwg.org/multipage/structured-data.html">serialized</a> Javascript objects, similar to passing an object through <code>JSON.stringify()</code>, as key value pairs in indexes. A database connection must be established and all operations done through transactions, the connection is handled asynchronously. As it stands, the API for IndexedDB is a pain point for developers, but the library <a href='https://github.com/jakearchibald/idb'>idb</a> resolves some issues. IndexedDB has the largest storage capacity of all storage methods. One interesting use case of IndexedDB is Youtube Premium which allows downloading videos to the browser; the videos are downloaded as blobs (collection of binary data AFAIK) which are read from the database when offline.</p>

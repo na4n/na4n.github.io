@@ -14,9 +14,11 @@ p{
 	font-size: 1.25em;
 }
 
-a:link {
-	color: green;
+a:link,a:visited {
+	color:green;
 }
+
+
 
 /* Light mode */
 @media (prefers-color-scheme: light) {
