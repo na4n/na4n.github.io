@@ -14,10 +14,9 @@ p{
 	font-size: 1.25em;
 }
 
-a:link,a:visited {
-	color:green;
+a:link {
+	color:mediumblue;
 }
-
 
 
 /* Light mode */
