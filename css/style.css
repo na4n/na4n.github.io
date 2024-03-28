@@ -8,6 +8,18 @@
 *{
 	font-family: Berkeley, monospace, sans-serif;
 }
+#one{
+	margin-left: 2em;
+}
+
+#two{
+	margin-left: 2em;
+}
+
+li span{
+	position: relative;
+	left: -10px;
+}
 
 a:link, a:visited {
 	color:mediumblue;
