@@ -5,7 +5,7 @@
   src: local('Berkeley'), url('Berkeley.ttf') format('truetype');
 }
 
-a:link{
+a:link, a:visited{
 	color: mediumblue;
 }
 

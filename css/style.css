@@ -9,7 +9,7 @@
 	font-family: Berkeley, monospace, sans-serif;
 }
 
-a:link {
+a:link, a:visited {
 	color:mediumblue;
 }
 
