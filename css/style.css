@@ -1,23 +1,17 @@
+@font-face {
+  font-family: 'Berkeley';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Berkeley'), url('Berkeley.ttf') format('truetype');
+}
+
 *{
-	font-family: monospace;
-}
-
-h2{
-	font-size: 2em;
-}
-
-h3 {
-	font-size: 1.5em;
-}
-
-p{
-	font-size: 1.25em;
+	font-family: Berkeley, monospace, sans-serif;
 }
 
 a:link {
 	color:mediumblue;
 }
-
 
 /* Light mode */
 @media (prefers-color-scheme: light) {
