@@ -14,8 +14,10 @@ a:link, a:visited{
 }
 
 code{
-	color: red;
-	font-style: italic;
+	font-size: 0.9rem;
+	font-family: monospace;
+	border: 1px solid #ccc;
+	padding: 0.25px;
 }
 
 /* Light mode */
@@ -24,6 +26,9 @@ code{
         background-color: white;
         color: black;
     }
+	code {
+	    background-color: #f4f4f4;
+	}
 }
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
@@ -31,5 +36,8 @@ code{
         background-color: black;
         color: white;
     }
+	code {
+	    background-color: #333;
+	}
 }
 
