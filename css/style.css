@@ -21,16 +21,15 @@ li span{
 	left: -10px;
 }
 
-a:link, a:visited {
-	color:blue;
-}
-
 /* Light mode */
 @media (prefers-color-scheme: light) {
     body {
         background-color: white;
         color: black;
     }
+	a:link, a:visited{
+		color: blue;
+	}
 }
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
@@ -38,5 +37,8 @@ a:link, a:visited {
         background-color: black;
         color: white;
     }
+	a:link, a:visited {
+		color: lightblue;
+	}
 }
 

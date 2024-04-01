@@ -20,6 +20,7 @@ code{
 	padding: 0.25px;
 }
 
+
 /* Light mode */
 @media (prefers-color-scheme: light) {
     body {
@@ -28,6 +29,9 @@ code{
     }
 	code {
 	    background-color: #f4f4f4;
+	}
+	a:link, a:visited {
+		color: blue;
 	}
 }
 /* Dark mode */
@@ -38,6 +42,9 @@ code{
     }
 	code {
 	    background-color: #333;
+	}
+	a:link, a:visited {
+		color: lightblue;
 	}
 }
 
