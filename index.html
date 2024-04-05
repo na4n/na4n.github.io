@@ -17,15 +17,26 @@
 		font-family: monospace, sans-serif;
 		max-width: 800px;
 		margin-top: 10px;
-		white-space: pre;
-	}
-
-	a:link{
-		color: black;
+		white-space: pre-wrap;
 	}
 	a:visited{
-		color: grey;
+		color:grey;
 	}
+
+	@media (prefers-color-scheme: light) {
+		*{
+			background-color: white;
+			color: black;
+		}
+	}
+	/* Dark mode */
+	@media (prefers-color-scheme: dark) {
+		*{
+			background-color: black;
+			color: white;
+		}
+	}
+
 </style>
 
 </head>
