@@ -10,17 +10,28 @@
 <style>
 	.container{
 		margin-left: 2%;
-		padding: 20px;
+		padding: 10px;
 	}
 
 	.content{
 		font-family: monospace, sans-serif;
-		max-width: 800px;
 		margin-top: 10px;
 		white-space: pre-wrap;
 	}
+	a{
+		line-height: 1.5;
+	}
+	ul{
+		line-height: 1;
+		margin: 0;
+		white-space: normal;
+	}
+	li{
+		line-height: 1.5;
+		padding: 5px;
+	}
 	a:visited{
-		color:grey;
+		color:lightgrey;
 	}
 
 	@media (prefers-color-scheme: light) {
@@ -29,7 +40,7 @@
 			color: black;
 		}
 	}
-	/* Dark mode */
+
 	@media (prefers-color-scheme: dark) {
 		*{
 			background-color: black;
@@ -42,69 +53,28 @@
 </head>
 
 <body>
-
 <div class="container">
-
-<div class="content">
-<a style="text-decoration-line: underline; text-decoration-style:dashed;">NATHAN ANNAREDDY</a>
+<div class="content">   <a style="font-size:20px">NATHAN ANNAREDDY</a>
 
 
 
 <a>Writing</a>
- ~ <a href="writing/BrowserStorage.html">Browser Storage</a>
+   <a href="writing/BrowserStorage.html">Browser Storage</a>
+
 
 <a>Projects</a>
- ~ <a href="https://na4n.github.io/erugo/">Erugo</a>
- ~ <a href="https://github.com/na4n/sudoku/">Sudoku Solver</a>
- ~ <a href="https://gist.github.com/na4n/9d9e5b20c8032d2b5d2fd7dca14a6bea">JS Minification</a>
-
+   <a href="https://na4n.github.io/erugo/">Erugo</a>
+   <a href="https://github.com/na4n/sudoku/">Sudoku Solver</a>
+   <a href="https://gist.github.com/na4n/9d9e5b20c8032d2b5d2fd7dca14a6bea">JS Minification</a>
 
 
 <a>About</a>
- ~ <a>CS graduate<a> 
- ~ <a>Experience with front-end, back-end, cloud</a>
-
- <!-- <h2 style="text-decoration:underline dotted;">Writing</h2>
-<h3 id="one">02/24 <a href='blog/BrowserStorage.html'>Browser Storage</a></h3>
-<br>		
-
-<h2 style="text-decoration:underline dotted;">Projects</h2>
-<h3 id="one"><a href="https://na4n.github.io/erugo/">Erugo</a></h3>
-<ul id="one">
-<li>A roguelike dungeon crawler written in vanilla client-side Javascript.</li>
-<li>Features a gauntlet of 10 levels, randomly generated dungeons, and trainable character attributes.</li>
-</ul>
-<h3 id="one"><a href="https://gist.github.com/na4n/9d9e5b20c8032d2b5d2fd7dca14a6bea">JS Minification Tool</a></h3>
-<ul id="one">
-<li>Work in progress!</li>
-<li>Needs
 <ul>
-<li>auto-inserting semicolons after statements</li>
-<li>distinguishing between else and else_if for spacing</li>
-<li>potentially using a real parser</li>
+	<li>CS graduate</li>
+	<li>Experience with front-end, back-end, cloud</li>
+	<li>Interested in Machine Learning, Distribtued Systems, and Database Architecture</li>
+	<li>Find me on Github: <a href="https://github.com/na4n/">github.com/na4n</a></li>
 </ul>
-</ul>
-<h3 id="one"><a href="https://github.com/na4n/sudoku/">Sudoku Solver</a></h3>
-<ul id="one">
-<li>Work in progress!</li>
-<li>Sudoku solver in Typescript and React</li>
-<li>Currently working on program logic, need to loop until deterministic solutions are reached then recursively backtrack through potentials</li>
-<li>Also needs React elements</li>
-</ul>
-<br>
-
-<h2 style="text-decoration:underline dotted;">Future Projects</h2>
-<p id="one">Distributed Key-Value Store (Golang)</p>
-<p id="one">Raft Consensus Protocol (Golang)</p>
-<p id="one">Reinforcement Learning?</p>
-<br>
-
-<h2 style="text-decoration:underline dotted;">About Me</h2>
-<p id="one">Recent CS graduate, how about this job market huh? :/</p>
-<p id="one">Experience with AWS and back-end development</p>
-<p id="two" style="font-size:small">and limited front-end experience!</p>
-<p id="one">Interested in Distributed Systems and Machine Learning</p> -->
-
 </div>
 </div>
 </body>
