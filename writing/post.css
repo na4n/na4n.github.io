@@ -1,12 +1,13 @@
 .content{
+    padding-top: 30px;
     font-family: monospace;
     white-space: pre-wrap;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    padding-left: 5%;
-    padding-right: 5%;
     font-size: 1rem;
     line-height: 1.5;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 code{
