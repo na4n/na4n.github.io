@@ -1,6 +1,7 @@
 .content{
     padding-top: 30px;
-    font-family: monospace;
+	padding-bottom: 50px;
+	font-family: monospace;
     white-space: pre-wrap;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -8,6 +9,9 @@
     line-height: 1.5;
     max-width: 1000px;
     margin: 0 auto;
+}
+h2{
+	margin: 0;
 }
 
 code{
@@ -29,7 +33,6 @@ a:visited{
         background-color: #f3f3f3;
     }
 }
-/* Dark mode */
 @media (prefers-color-scheme: dark) {
     *{
         background-color: black;
