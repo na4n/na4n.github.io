@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nathan Annareddy</title>
+<script src="js/theme.js"></script>
 <style>
 	*{
 		line-height: 1.5;
@@ -18,56 +19,57 @@
 		margin-top: 10px;
 		white-space: pre-wrap;
 	}
+	.title{
+		height: fit-content;
+		width: fit-content;
+		margin: 0 auto;
+	}
+	.title:hover{
+		cursor:pointer;
+	}
 	ul{
 		margin: 0;
 		white-space: normal;
 	}
-	a:visited{
+	a{
+		text-decoration: none;
+	}
+	a:visited, a:link{
+		color:green;
+	}
+	a:hover{
 		color:grey;
+		cursor:pointer;
 	}
-	@media (prefers-color-scheme: light) {
-		*{
-			background-color: white;
-			color: black;
-		}
-	}
-
-	@media (prefers-color-scheme: dark) {
-		*{
-			background-color: black;
-			color: white;
-		}
-	}
-
 </style>
 
 </head>
 
 <body>
 <div class="container">
-<div style="max-width:100%;text-align:center;font-family:monospace;font-size:2em">Nathan Annareddy</div>
+<div class="title" onclick="toggleTheme()" style="max-width:100%;text-align:center;font-family:monospace;font-size:2em">Nathan Annareddy</div>
 <div class="content">
 
-<a>Writing</a>
+<span>Writing</span>
 <span class="listitem" style="margin:0;padding:0;display:flex; justify-content:space-between; align-items:center;">
 	<span style="font-size:1em;margin:0;padding-left:3em;"><a href="writing/BrowserStorage.html">Browser Storage</a></span>
 	<a style='font-size:1em;margin:0;'>2.8.24</a>
 </span>
 
-<a>Projects</a>
+<span>Projects</span>
 <a class="listitem" style="margin-left:3em" href="https://na4n.github.io/erugo/">Erugo</a>
 <a class="listitem" style="margin-left:3em" href="https://github.com/na4n/sudoku/">Sudoku Solver</a>
 <a class="listitem" style="margin-left:3em" href="https://gist.github.com/na4n/9d9e5b20c8032d2b5d2fd7dca14a6bea">JS Minification</a>
 
 
-<a>About</a><ul>
+<span>About</span><ul>
 	<li style="padding-bottom:10px;">CS graduate</li>
 	<li style="padding-bottom:10px;">Experience in application development (front-end, back-end) and cloud computing</li>
 	<li style="padding-bottom:10px;">Interests: Machine Learning, Distribtued Systems, and Database Architecture</li>
 	<li>Find me on:
 	<ul>
-		<li style="padding-top:10px;padding-bottom:10px">Github: <a href="https://github.com/na4n/">github.com/na4n</a></li>
-		<li style="padding-bottom:10px;">LinkedIn: <a href="https://linkedin.com/in/nathanannareddy">linkedin.com/in/nathanannareddy</li></ul></div>
+		<li style="padding-top:10px;padding-bottom:10px"><a href="https://github.com/na4n/">Github</a> [github.com/na4n]</li>
+		<li style="padding-bottom:10px;"><a href="https://linkedin.com/in/nathanannareddy">LinkedIn</a> [linkedin.com/in/nathanannareddy]</li></ul></div>
 </div>
 </body>
 
