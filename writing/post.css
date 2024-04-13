@@ -20,25 +20,12 @@ code{
     padding: 0px;
 }
 
-a:visited{
-    color: grey;
+a:link, a:visited{
+    color: green;
 }
 
-@media (prefers-color-scheme: light) {
-    *{
-        background-color: white;
-        color: black;
-    }
-    code{
-        background-color: #f3f3f3;
-    }
+a:hover{
+	color: grey;
+	text-decoration: underline;
 }
-@media (prefers-color-scheme: dark) {
-    *{
-        background-color: black;
-        color: white;
-    }
-    code{
-        background-color: #333;
-    }
-}
+
