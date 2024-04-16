@@ -1,0 +1,35 @@
+*{
+	line-height: 1.5;
+}
+
+.centerAndPad{
+    padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+	font-family: monospace, sans-serif;
+}
+
+.container{
+	max-width: 800px;
+}
+.content{
+	margin-top: 10px;
+	white-space: pre-wrap;
+}
+.title{
+	height: fit-content;
+	width: fit-content;
+	margin: 0 auto;
+}
+ul{
+	margin: 0;
+	white-space: normal;
+}
+a:visited, a:link{
+	color:green;
+}
+a:hover{
+	color:grey;
+	cursor:pointer;
+	text-decoration: underline;
+}

@@ -4,48 +4,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nathan Annareddy</title>
 <script src="js/theme.js"></script>
-<style>
-	*{
-		line-height: 1.5;
-	}
-	.container{
-		padding-top: 20px;
-		padding-bottom: 20px;
-		margin: 0 auto;
-		max-width: 800px;
-	}
-	.content{
-		font-family: monospace, sans-serif;
-		margin-top: 10px;
-		white-space: pre-wrap;
-	}
-	.title{
-		height: fit-content;
-		width: fit-content;
-		margin: 0 auto;
-	}
-	ul{
-		margin: 0;
-		white-space: normal;
-	}
-	a:visited, a:link{
-		color:green;
-	}
-	a:hover{
-		color:grey;
-		cursor:pointer;
-		text-decoration: underline;
-	}
-</style>
-
+<script src="js/year.js"></script>
+<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
-<div class="container">
-<div class="title" onclick="toggleTheme()" style="max-width:100%;text-align:center;font-family:monospace;font-size:2em">Nathan Annareddy</div>
-<div class="content">
+<span class="centerAndPad">
+	<div class="title" onclick="toggleTheme()" style="margin: 0 auto;padding-top:20px;text-align:center;font-family:monospace;font-size:2em">Nathan Annareddy</div>
+	<div id="progress" style="text-align:center;font-size:0.5vw;padding-bottom:5px"></div>
+	<div style="padding-bottom:0px;text-align:center;font-size:0.8em;font-family:monospace,sans-serif"><a id="year">The year</a> is <a id="percent">x</a>% finished</div>	
+</span>
 
-<span>Writing</span>
+<div class="container centerAndPad">
+<div class="content"><span>Writing</span>
 <span class="listitem" style="margin:0;padding:0;display:flex; justify-content:space-between; align-items:center;">
 	<span style="font-size:1em;margin:0;padding-left:3em;"><a href="writing/BrowserStorage.html">Browser Storage</a></span>
 	<a style='font-size:1em;margin:0;'>2.8.24</a>

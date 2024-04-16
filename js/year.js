@@ -11,29 +11,36 @@ function currentDays(day, month, year){
 	}
 	
 	let daysPassed = day;
-	for(let i = 0; i < month; i++){
+	for(let i = 0; i < month-1; i++){
 		daysPassed += daysInMonth[i];
 	}
 
-
-	let txt = '';
+	console.log(daysPassed);
+	console.log(isLeap(year));
+	const percentCompleted = (daysPassed/isLeap(year))*100;
+	let textProgressBar = '';
 	for(let i = 0; i < 100; i++){
-		if(Math.floor(i > (daysPassed/isLeap(year))*100)){
-			txt += '.';
+		if(Math.floor(i > percentCompleted)){
+			textProgressBar += '&#9617;';
 		}
 		else{
-			txt += '█';
+			textProgressBar += '&#9608';
 		}
 	}
 
-	return txt
+	return [textProgressBar, percentCompleted];
 }
 
-const date = new Date();
-const txt = currentDays(date.getDate(), date.getMonth()+1, date.getFullYear());
+document.addEventListener('DOMContentLoaded', function(){
+	const date = new Date();
+	const dateValues = currentDays(date.getDate(), date.getMonth()+1, date.getFullYear());
 
-//document.addEventListener('DOMContentLoaded', function(){
-//	const p = document.getElementById('progress')
-//	p.innerHTML = txt;
-//});
+	const pBar = document.getElementById('progress')
+	pBar.innerHTML = dateValues[0];
+	const percent = document.getElementById('percent');
+	percent.innerHTML = dateValues[1].toFixed(2);
+	const year = document.getElementById('year');
+	year.innerHTML = date.getFullYear();
+	
+});
 
