@@ -4,43 +4,76 @@ function isLeap(year){
 	return leap ? 366 : 365;
 }
 
-function currentDays(day, month, year){
+function currentDays(day, month, year, hours, minutes, seconds){
 	const daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 	if(isLeap(year)){
 		daysInMonth[1]++;
 	}
-	
-	let daysPassed = day;
+	let daysPassed = day-1;
 	for(let i = 0; i < month-1; i++){
 		daysPassed += daysInMonth[i];
 	}
 
-	console.log(daysPassed);
-	console.log(isLeap(year));
-	const percentCompleted = (daysPassed/isLeap(year))*100;
-	let textProgressBar = '';
-	for(let i = 0; i < 100; i++){
-		if(Math.floor(i > percentCompleted)){
-			textProgressBar += '&#9617;';
+	const percentCompleted = ((daysPassed + ((hours + ((minutes + (seconds / 60)) / 60)) / 24)) / isLeap(year)) * 100;
+	if(!progressBar){
+		let completed = '';
+		let notCompleted = '';
+		for(let i = 0; i < 100; i++){
+			(i < Math.floor(percentCompleted)) ? completed += '\u2593' : notCompleted += '.';
 		}
-		else{
-			textProgressBar += '&#9608';
-		}
+		console.log('made progress bar');
+		return [[completed, notCompleted], percentCompleted];
 	}
-
-	return [textProgressBar, percentCompleted];
+	return [percentCompleted];
 }
 
 document.addEventListener('DOMContentLoaded', function(){
-	const date = new Date();
-	const dateValues = currentDays(date.getDate(), date.getMonth()+1, date.getFullYear());
-
-	const pBar = document.getElementById('progress')
-	pBar.innerHTML = dateValues[0];
-	const percent = document.getElementById('percent');
-	percent.innerHTML = dateValues[1].toFixed(2);
 	const year = document.getElementById('year');
-	year.innerHTML = date.getFullYear();
-	
+	year.innerHTML = (new Date()).getFullYear();
+ 
+	updateTime();
+	updateBar();
+	updatePercent();
+
+	setInterval(updateTime, 100); // Update every second
+	setInterval(updatePercent, 1000);
+	setInterval(updateLocation, 100);
 });
+
+let percent;
+let progressBar;
+function updateTime(){
+	const date = new Date();
+	const values = currentDays(date.getDate(), date.getMonth()+1, date.getFullYear(), date.getHours(), date.getMinutes(), date.getSeconds());
+	if(values.length > 1){
+		progressBar = values[0];
+		percent = values[1];
+	}
+	else{
+		percent = values[0];
+	}
+}
+
+let count = 0;
+function updateLocation(){
+	const index = count % progressBar[1].length;
+
+	const a = progressBar[1].split("");
+	a[index] = '\u2593';
+	index-1 >= 0 ? a[index-1] = '.' : a[progressBar[1].length-1] = '.';
+	progressBar[1] = a.join("");
+	count++;
+	console.log(progressBar[1]);
+	updateBar()
+}
+
+function updateBar(){
+  const pBar = document.getElementById('progress');
+  pBar.innerText = progressBar[0] + progressBar[1];
+}
+
+function updatePercent(){
+  const pe = document.getElementById('percent');
+  pe.innerHTML = percent.toFixed(5);
+}
 
