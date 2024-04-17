@@ -2,6 +2,14 @@
 	line-height: 1.5;
 }
 
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+}
+
 .centerAndPad{
     padding-top: 20px;
 	padding-bottom: 20px;
@@ -33,9 +41,5 @@ a:hover{
 	color:grey;
 	cursor:pointer;
 	text-decoration: underline;
-}
-
-footer{
-	
 }
 
