@@ -35,9 +35,9 @@ document.addEventListener('DOMContentLoaded', function(){
 	updateBar();
 	updatePercent();
 
-	setInterval(updateTime, 100); // Update every second
+	setInterval(updateTime, 50); // Update every second
 	setInterval(updatePercent, 1000);
-	setInterval(updateLocation, 100);
+	setInterval(updateLocation, 50);
 });
 
 let percent;
