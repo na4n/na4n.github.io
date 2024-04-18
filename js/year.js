@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	updatePercent();
 
 	setInterval(updateTime, 50); // Update every second
-	setInterval(updatePercent, 1000);
+	setInterval(updatePercent, 1500);
 	setInterval(updateLocation, 50);
 });
 
