@@ -21,7 +21,6 @@ function currentDays(day, month, year, hours, minutes, seconds){
 		for(let i = 0; i < 100; i++){//\u2593
 			(i < Math.floor(percentCompleted)) ? completed += '\u2593' : notCompleted += '\u2591';
 		}
-		console.log('made progress bar');
 		return [[completed, notCompleted], percentCompleted];
 	}
 	return [percentCompleted];
@@ -63,7 +62,6 @@ function updateLocation(){
 	index-1 >= 0 ? a[index-1] = '\u2591' : a[progressBar[1].length-1] = '\u2591';
 	progressBar[1] = a.join("");
 	count++;
-	console.log(progressBar[1]);
 	updateBar()
 }
 
