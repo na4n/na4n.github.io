@@ -1,6 +1,6 @@
 const THEMES = {
-	WHITE: 'white',
-	BLACK: 'black',
+	WHITE: '#f7ece5',
+	BLACK: '#633f3b',
 	DARK: 'dark',
 	LIGHT: 'light'
 }
@@ -16,7 +16,6 @@ function changeTheme(){
 function setTheme(isDark){
 	document.body.style.backgroundColor = isDark ? THEMES.BLACK : THEMES.WHITE;
 	document.body.style.color = isDark ? THEMES.WHITE : THEMES.BLACK;
-	document.getElementsByClassName('title')[0].style.color = isDark ? THEMES.WHITE : THEMES.BLACK;
 }
 
 // Toggles theme based on clicking title element

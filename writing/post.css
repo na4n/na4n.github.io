@@ -15,12 +15,13 @@ h2{
 }
 
 code{
-    font-size: 1rem;
-    border: 1px solid darkgrey;
+    border: 1px dashed;
     padding: 0px;
+	font-style: italic;
+	color: #c47a62;
 }
 
-a:link, a:visited{
+/*a:link, a:visited{
     color: green;
 }
 
@@ -28,4 +29,4 @@ a:hover{
 	color: grey;
 	text-decoration: underline;
 }
-
+*/

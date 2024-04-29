@@ -35,10 +35,10 @@ ul{
 	white-space: normal;
 }
 a:visited, a:link{
-	color:green;
+	color:#8c9e93;
 }
 a:hover{
-	color:grey;
+	color:#c47a62;
 	cursor:pointer;
 	text-decoration: underline;
 }
