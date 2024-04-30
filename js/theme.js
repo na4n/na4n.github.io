@@ -1,6 +1,6 @@
 const THEMES = {
-	WHITE: '#f7ece5',
-	BLACK: '#633f3b',
+	WHITE: 'white',
+	BLACK: 'black',
 	DARK: 'dark',
 	LIGHT: 'light'
 }
