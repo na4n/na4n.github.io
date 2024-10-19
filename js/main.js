@@ -1,1 +1,3 @@
-document.getElementById('email').innerHTML = 'daynzzbkw@mozmail.com'
+document.addEventListener('DOMContentLoaded', 
+    () => document.getElementById('email').innerHTML = 'daynzzbkw@mozmail.com'
+)
